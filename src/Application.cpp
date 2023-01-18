@@ -35,5 +35,28 @@ int main(int argc, char const *argv[])
 
     glewExperimental = GL_TRUE;
 
+    GLenum glewInitRes = glewInit();
+    if (glewInitRes != GLEW_OK) {
+        printf("GLEW initialization failed\n");
+        glfwDestroyWindow(mainWindow);
+        glfwTerminate();
+
+        return 1;
+    }
+
+    glViewport(0, 0, bufferWidth, bufferHeight);
+
+    while (!glfwWindowShouldClose(mainWindow))
+    {
+        // Get and handle user input events
+        glfwPollEvents();
+
+        // Clear window
+        glClearColor(1.0f, 1.0f, 0.5f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glfwSwapBuffers(mainWindow);
+    }
+
     return 0;
 }

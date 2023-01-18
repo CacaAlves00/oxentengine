@@ -38,6 +38,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../external-libs/glew/include"
   "../external-libs/glfw/include"
   "../external-libs/glfw/src"
   "external-libs/glfw/src"

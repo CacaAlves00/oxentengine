@@ -374,6 +374,24 @@ Fontconfig_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
+//The directory containing a CMake configuration file for GLEW.
+GLEW_DIR:PATH=GLEW_DIR-NOTFOUND
+
+//Path to a file.
+GLEW_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a library.
+GLEW_SHARED_LIBRARY_DEBUG:FILEPATH=GLEW_SHARED_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GLEW_SHARED_LIBRARY_RELEASE:FILEPATH=/usr/local/lib64/libGLEW.so
+
+//Path to a library.
+GLEW_STATIC_LIBRARY_DEBUG:FILEPATH=GLEW_STATIC_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GLEW_STATIC_LIBRARY_RELEASE:FILEPATH=/usr/local/lib64/libGLEW.a
+
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/home/dwight/workspaces/cpp/projects/oxentengine/build/external-libs/glfw
 
@@ -916,6 +934,8 @@ CVS_UPDATE_OPTIONS-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//Details about finding GLEW
+FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/local/include][/usr/local/lib64/libGLEW.so][v2.2.0()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
 //Details about finding Threads
@@ -936,6 +956,16 @@ Fontconfig_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Fontconfig_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_INCLUDE_DIR
+GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_SHARED_LIBRARY_DEBUG
+GLEW_SHARED_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_SHARED_LIBRARY_RELEASE
+GLEW_SHARED_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_STATIC_LIBRARY_DEBUG
+GLEW_STATIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_STATIC_LIBRARY_RELEASE
+GLEW_STATIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //GLFW pkg-config Libs.private
 GLFW_PKG_CONFIG_LIBS_PRIVATE:INTERNAL= -lrt -lm -ldl
 //GLFW pkg-config Requires.private

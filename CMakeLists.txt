@@ -10,12 +10,13 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 add_executable(oxentengine src/Application.cpp)
 
+find_package(GLEW REQUIRED)
+include_directories(external-libs/glew/include)
+target_link_libraries(oxentengine GLEW::GLEW)
+
 add_subdirectory(external-libs/glfw)
-
 target_link_libraries(oxentengine glfw)
-
 find_package(OpenGL REQUIRED)
-
 target_link_libraries(oxentengine OpenGL::GL)
 
 

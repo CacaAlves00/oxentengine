@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -37,7 +38,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 14,
 				"parent" : 0
 			}
 		]
@@ -54,7 +67,11 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
+					"path" : "/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glew/include"
+				},
+				{
+					"backtrace" : 3,
 					"path" : "/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/include"
 				}
 			],
@@ -68,7 +85,7 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
+			"backtrace" : 3,
 			"id" : "glfw::@33cb9517236444822c54"
 		}
 	],
@@ -86,12 +103,21 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib64",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
-				"fragment" : "external-libs/glfw/src/libglfw3.a",
+				"fragment" : "/usr/local/lib64/libGLEW.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "external-libs/glfw/src/libglfw3.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libGL.so",
 				"role" : "libraries"
 			},

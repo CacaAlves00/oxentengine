@@ -6,7 +6,7 @@ C_FLAGS = -g -fPIC   -Wall -std=c99
 
 C_DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
 
-C_INCLUDES = -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/include -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/src -I/home/dwight/workspaces/cpp/projects/oxentengine/build/external-libs/glfw/src 
+C_INCLUDES = -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glew/include -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/include -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/src -I/home/dwight/workspaces/cpp/projects/oxentengine/build/external-libs/glfw/src 
 
 # Custom flags: external-libs/glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

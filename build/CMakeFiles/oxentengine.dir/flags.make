@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/include 
+CXX_INCLUDES = -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glew/include -I/home/dwight/workspaces/cpp/projects/oxentengine/external-libs/glfw/include 
 

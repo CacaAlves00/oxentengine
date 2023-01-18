@@ -79,6 +79,7 @@ oxentengine_EXTERNAL_OBJECTS =
 
 oxentengine: CMakeFiles/oxentengine.dir/src/Application.cpp.o
 oxentengine: CMakeFiles/oxentengine.dir/build.make
+oxentengine: /usr/local/lib64/libGLEW.so
 oxentengine: external-libs/glfw/src/libglfw3.a
 oxentengine: /usr/lib/x86_64-linux-gnu/libGL.so
 oxentengine: /usr/lib/x86_64-linux-gnu/librt.so

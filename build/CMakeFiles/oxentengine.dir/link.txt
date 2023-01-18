@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/oxentengine.dir/src/Application.cpp.o  -o oxentengine  external-libs/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/libGL.so -lpthread -lrt -lm -ldl 
